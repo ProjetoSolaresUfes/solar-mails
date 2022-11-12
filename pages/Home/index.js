@@ -24,7 +24,7 @@ export default function Home() {
         <>
             <Header />
             <div className={styles.container}>
-                {!session ?
+                {session ?
                     <>
                         <h1>Disparador automático de emails</h1>
                         <WelcomeAnimation />

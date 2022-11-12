@@ -75,8 +75,8 @@ export function EmailsDataProvider({ children }) {
                 subject: subject,
                 typeBody: typeBody,
                 auth: {
-                    email: session.user.email,
-                    accessToken: session.accessToken,
+                    email: process.env.EMAIL,
+                    accessToken: process.env.GOOGLE_ACCESS_TOKEN,
                 }
             }),
         }).then((res) => {
